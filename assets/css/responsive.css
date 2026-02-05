@@ -1,0 +1,179 @@
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .car-3d-container {
+        height: 300px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .about-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 14, 39, 0.98);
+        flex-direction: column;
+        gap: 0;
+        padding: var(--spacing-lg);
+        display: none;
+        border-bottom: 2px solid rgba(0, 255, 136, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: var(--spacing-md) 0;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .nav-container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .logo-3d {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .about-lead {
+        font-size: 18px;
+    }
+
+    .about-paragraph {
+        font-size: 14px;
+    }
+
+    .service-card {
+        padding: var(--spacing-lg);
+    }
+
+    .card-icon {
+        font-size: 36px;
+    }
+
+    .contact-content {
+        gap: var(--spacing-lg);
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+
+    .contact-form {
+        padding: var(--spacing-lg);
+    }
+
+    .info-title {
+        font-size: 16px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .footer-section h4 {
+        font-size: 13px;
+    }
+
+    .footer-section p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 12px;
+    }
+}
