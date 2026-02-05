@@ -146,6 +146,10 @@
         padding: var(--spacing-lg);
     }
 
+    .info-item {
+        grid-template-columns: 1fr;
+    }
+
     .info-title {
         font-size: 16px;
     }
