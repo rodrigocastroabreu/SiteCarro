@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +7,14 @@
     <meta name="keywords" content="carros, venda de carros, consultoria automotiva, Rio de Janeiro">
     <meta name="author" content="Rodrigo Abreu">
     <meta name="theme-color" content="#0a0e27">
-    
     <title>Carros & Cia | Consultoria Automotiva Premium</title>
     
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     
-    <!-- Estilos -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/estilo.css">
@@ -25,9 +23,12 @@
 </head>
 
 <body>
-    <!-- NAVIGATION -->
+    <!-- ============================================
+         NAVBAR / NAVIGATION
+         ============================================ -->
     <nav class="navbar" role="navigation" aria-label="Navegação principal">
         <div class="nav-container">
+            <!-- Logo -->
             <div class="logo-container">
                 <div class="logo-3d">
                     <span class="logo-text">CARROS & CIA.</span>
@@ -35,10 +36,14 @@
                 </div>
             </div>
 
+            <!-- Menu Toggle (Mobile) -->
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
                 <span class="hamburger"></span>
             </button>
 
+            <!-- Navigation Links -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio" class="nav-link" data-active="true">Início</a></li>
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
@@ -49,22 +54,36 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
     <section id="inicio" class="hero" role="region" aria-label="Seção principal">
+        <div class="hero-background"></div>
+        
         <div class="hero-content">
+            <!-- Left Column: Text -->
             <div class="hero-text">
                 <h1 class="hero-title">
                     <span class="title-word">O Carro</span>
                     <span class="title-word">Dos Seus</span>
                     <span class="title-word neon-text">Sonhos</span>
                 </h1>
-                <p class="hero-subtitle">Realizamos seus objetivos com segurança, confiança e 15 anos de experiência</p>
+                
+                <p class="hero-subtitle">
+                    Realizamos seus objetivos com segurança, confiança e 15 anos de experiência
+                </p>
+
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" data-scroll="#contato">Começar Agora</button>
-                    <button class="btn btn-secondary" data-scroll="#sobre">Saiba Mais</button>
+                    <button class="btn btn-primary" data-scroll="#contato">
+                        Começar Agora
+                    </button>
+                    <button class="btn btn-secondary" data-scroll="#sobre">
+                        Saiba Mais
+                    </button>
                 </div>
             </div>
 
+            <!-- Right Column: Visual -->
             <div class="hero-visual">
                 <div class="car-3d-container">
                     <div class="car-3d">
@@ -75,27 +94,33 @@
             </div>
         </div>
 
+        <!-- Scroll Indicator -->
         <div class="scroll-indicator">
-            <span>SCROLL</span>
+            <span class="scroll-text">SCROLL</span>
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
     <section id="sobre" class="about" role="region" aria-label="Sobre nós">
         <div class="container">
+            <!-- Section Header -->
             <div class="section-header">
                 <h2 class="section-title">Quem Somos</h2>
                 <div class="title-underline"></div>
             </div>
 
+            <!-- Content Grid -->
             <div class="about-content">
+                <!-- Text Column -->
                 <div class="about-text">
                     <p class="about-lead">
-                        Com <span class="neon-highlight">15 anos</span> de dedicação e excelência, a <span class="neon-highlight">Carros & Cia.</span> 
-                        é referência em consultoria automotiva.
+                        Com <span class="neon-highlight">15 anos</span> de dedicação e excelência, a 
+                        <span class="neon-highlight">Carros & Cia.</span> é referência em consultoria automotiva.
                     </p>
 
                     <p class="about-paragraph">
@@ -104,6 +129,7 @@
                         de confiança e fidelidade duradouros.
                     </p>
 
+                    <!-- Statistics -->
                     <div class="stats-container">
                         <div class="stat-box">
                             <div class="stat-number">15+</div>
@@ -120,6 +146,7 @@
                     </div>
                 </div>
 
+                <!-- Image Column -->
                 <div class="about-image">
                     <div class="image-frame">
                         <img src="assets/carro-assinatura.jpg" alt="Carros de Qualidade">
@@ -130,15 +157,20 @@
         </div>
     </section>
 
-    <!-- SERVICES SECTION -->
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
     <section id="servicos" class="services" role="region" aria-label="Serviços">
         <div class="container">
+            <!-- Section Header -->
             <div class="section-header">
                 <h2 class="section-title">Nossos Serviços</h2>
                 <div class="title-underline"></div>
             </div>
 
+            <!-- Services Grid -->
             <div class="services-grid">
+                <!-- Service 1 -->
                 <div class="service-card" data-service="1">
                     <div class="card-icon">
                         <div class="icon-3d">🚗</div>
@@ -150,6 +182,7 @@
                     <a href="#contato" class="service-link">Mais informações →</a>
                 </div>
 
+                <!-- Service 2 -->
                 <div class="service-card" data-service="2">
                     <div class="card-icon">
                         <div class="icon-3d">💰</div>
@@ -161,6 +194,7 @@
                     <a href="#contato" class="service-link">Mais informações →</a>
                 </div>
 
+                <!-- Service 3 -->
                 <div class="service-card" data-service="3">
                     <div class="card-icon">
                         <div class="icon-3d">📋</div>
@@ -172,6 +206,7 @@
                     <a href="#contato" class="service-link">Mais informações →</a>
                 </div>
 
+                <!-- Service 4 -->
                 <div class="service-card" data-service="4">
                     <div class="card-icon">
                         <div class="icon-3d">🔧</div>
@@ -183,6 +218,7 @@
                     <a href="#contato" class="service-link">Mais informações →</a>
                 </div>
 
+                <!-- Service 5 -->
                 <div class="service-card" data-service="5">
                     <div class="card-icon">
                         <div class="icon-3d">🏆</div>
@@ -194,6 +230,7 @@
                     <a href="#contato" class="service-link">Mais informações →</a>
                 </div>
 
+                <!-- Service 6 -->
                 <div class="service-card" data-service="6">
                     <div class="card-icon">
                         <div class="icon-3d">⚡</div>
@@ -208,14 +245,18 @@
         </div>
     </section>
 
-    <!-- CONSULTORES SECTION -->
+    <!-- ============================================
+         CONSULTORES SECTION
+         ============================================ -->
     <section id="consultores" class="consultores" role="region" aria-label="Nossos Consultores">
         <div class="container">
+            <!-- Section Header -->
             <div class="section-header">
                 <h2 class="section-title">Nossos Consultores</h2>
                 <div class="title-underline"></div>
             </div>
 
+            <!-- Team Image -->
             <div class="consultant-image">
                 <div class="image-frame-large">
                     <img src="assets/consultores.jpg" alt="Equipe de Consultores Carros & Cia">
@@ -223,6 +264,7 @@
                 </div>
             </div>
 
+            <!-- Team Description -->
             <div class="consultant-content">
                 <p class="consultant-text">
                     A <span class="neon-highlight">Carros & Cia.</span> é formada por profissionais altamente qualificados com 
@@ -234,86 +276,135 @@
                     experiência de compra em uma jornada memorável.
                 </p>
 
-                <button class="btn btn-primary" data-scroll="#contato">Falar com Consultores</button>
+                <button class="btn btn-primary" data-scroll="#contato">
+                    Falar com Consultores
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
     <section id="contato" class="contact" role="region" aria-label="Contato e Localização">
         <div class="container">
+            <!-- Section Header -->
             <div class="section-header">
                 <h2 class="section-title">Onde Estamos</h2>
                 <div class="title-underline"></div>
             </div>
 
+            <!-- Contact Content Grid -->
             <div class="contact-content">
+                <!-- Map Column -->
                 <div class="map-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.254844548052!2d-43.364712467659004!3d-22.98234139602229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-904!5e0!3m2!1spt-BR!2sbr!4v1642532754862!5m2!1spt-BR!2sbr"
                         title="Localização da Carros & Cia"
                         allowfullscreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
 
+                <!-- Contact Info Column -->
                 <div class="contact-info">
+                    <!-- Contact Info Group -->
                     <div class="info-group">
                         <h3 class="info-title">Informações de Contato</h3>
                         
+                        <!-- Email -->
                         <div class="info-item">
                             <span class="info-label">Email:</span>
                             <a href="mailto:consultores@email.com" class="info-link">consultores@email.com</a>
                         </div>
 
+                        <!-- Phone -->
                         <div class="info-item">
                             <span class="info-label">Telefone:</span>
                             <a href="tel:+5521999999999" class="info-link">+55 (21) 99999-9999</a>
                         </div>
 
+                        <!-- Address -->
                         <div class="info-item">
                             <span class="info-label">Endereço:</span>
-                            <p class="info-text">Av. Ayrton Senna, 3000<br>Barra da Tijuca<br>Rio de Janeiro - RJ</p>
+                            <p class="info-text">
+                                Av. Ayrton Senna, 3000<br>
+                                Barra da Tijuca<br>
+                                Rio de Janeiro - RJ
+                            </p>
                         </div>
 
+                        <!-- Hours -->
                         <div class="info-item">
                             <span class="info-label">Horário:</span>
-                            <p class="info-text">Segunda a Sexta: 9h - 18h<br>Sábado: 10h - 14h</p>
+                            <p class="info-text">
+                                Segunda a Sexta: 9h - 18h<br>
+                                Sábado: 10h - 14h
+                            </p>
                         </div>
                     </div>
 
+                    <!-- Contact Form -->
                     <form class="contact-form" id="contactForm" aria-label="Formulário de contato">
+                        <!-- Name Field -->
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Seu Nome" required aria-label="Nome">
+                            <input 
+                                type="text" 
+                                id="name" 
+                                placeholder="Seu Nome" 
+                                required 
+                                aria-label="Nome">
                             <span class="form-error" id="nameError"></span>
                         </div>
 
+                        <!-- Email Field -->
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Seu Email" required aria-label="Email">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                placeholder="Seu Email" 
+                                required 
+                                aria-label="Email">
                             <span class="form-error" id="emailError"></span>
                         </div>
 
+                        <!-- Message Field -->
                         <div class="form-group">
-                            <textarea id="message" placeholder="Sua Mensagem" rows="4" required aria-label="Mensagem"></textarea>
+                            <textarea 
+                                id="message" 
+                                placeholder="Sua Mensagem" 
+                                rows="4" 
+                                required 
+                                aria-label="Mensagem">
+                            </textarea>
                             <span class="form-error" id="messageError"></span>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary">
+                            Enviar Mensagem
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
     <footer class="footer" role="contentinfo">
         <div class="container">
+            <!-- Footer Content Grid -->
             <div class="footer-content">
+                <!-- Company Info -->
                 <div class="footer-section">
                     <h4>Carros & Cia.</h4>
                     <p>Consultoria automotiva de excelência com 15 anos de dedicação ao mercado.</p>
                 </div>
 
+                <!-- Quick Links -->
                 <div class="footer-section">
                     <h4>Links Rápidos</h4>
                     <ul>
@@ -324,12 +415,16 @@
                     </ul>
                 </div>
 
+                <!-- Contact -->
                 <div class="footer-section">
                     <h4>Contato</h4>
-                    <p>Email: <a href="mailto:consultores@email.com">consultores@email.com</a></p>
-                    <p>Tel: <a href="tel:+5521999999999">+55 (21) 99999-9999</a></p>
+                    <p>
+                        Email: <a href="mailto:consultores@email.com">consultores@email.com</a><br>
+                        Tel: <a href="tel:+5521999999999">+55 (21) 99999-9999</a>
+                    </p>
                 </div>
 
+                <!-- Social Media -->
                 <div class="footer-section">
                     <h4>Redes Sociais</h4>
                     <div class="social-links">
@@ -341,6 +436,7 @@
                 </div>
             </div>
 
+            <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <p>&copy; 2026 <span class="neon-text">Carros & Cia.</span> - Todos os direitos reservados.</p>
                 <p>Desenvolvido por <span class="neon-text">Rodrigo Abreu</span></p>
@@ -348,7 +444,9 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/interactions.js" defer></script>
     <script src="assets/js/animations.js" defer></script>
