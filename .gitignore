@@ -1,0 +1,44 @@
+# Dependências de desenvolvimento
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+*.sublime-project
+*.sublime-workspace
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos de sistema
+Thumbs.db
+.directory
+
+# Compilados
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Logs
+logs/
+*.log
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+
+# Backup
+*.bak
+*~
