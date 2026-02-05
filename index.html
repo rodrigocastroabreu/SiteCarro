@@ -4,80 +4,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carro & Cia. - Serviços de qualidade na compra e venda de veículos. 15 anos de experiência.">
+    <meta name="description" content="Carros & Cia - Consultoria Automotiva de Excelência com 15 anos de experiência">
     <meta name="keywords" content="carros, venda de carros, consultoria automotiva, Rio de Janeiro">
     <meta name="author" content="Rodrigo Abreu">
-    <title>Carro & Cia - Consultoria Automotiva</title>
+    <meta name="theme-color" content="#0a0e27">
+    
+    <title>Carros & Cia | Consultoria Automotiva Premium</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-    <!-- NAVEGAÇÃO PRINCIPAL -->
-    <nav class="secao topo" role="navigation">
-        <h1>Carros & Cia.</h1>
-        <p class="paragrafo paragrafo-topo">
-            <a class="link-topo" href="#sobre">Sobre</a>
-            <a class="link-topo" href="#consultores">Consultores</a>
-            <a class="link-topo" href="#endereco">Endereço</a>
-        </p>
+    <!-- NAVIGATION -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-3d">
+                    <span class="logo-text">CARROS & CIA.</span>
+                    <span class="logo-glow"></span>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link" data-active="true">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#consultores" class="nav-link">Consultores</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- BANNER PRINCIPAL -->
-    <section class="secao banner" role="region" aria-label="Banner principal">
-        <img class="banner-img" src="assets/banner.jpg" alt="Banner - Carros & Cia.">
-    </section>
-<!-- SEÇÃO SOBRE -->
-    <section id="sobre" class="secao" role="region" aria-label="Sobre a Carro & Cia">
-        <h2>O carro dos seus sonhos está aqui</h2>
-        <h3>Conquiste seu carro novo hoje</h3>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero" role="region" aria-label="Seção principal">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-word">O Carro</span>
+                    <span class="title-word">Dos Seus</span>
+                    <span class="title-word neon-text">Sonhos</span>
+                </h1>
+                <p class="hero-subtitle">Realizamos seus objetivos com segurança, confiança e 15 anos de experiência</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-scroll="#contato">Começar Agora</button>
+                    <button class="btn btn-secondary" data-scroll="#sobre">Saiba Mais</button>
+                </div>
+            </div>
 
-        <img class="imagem" src="assets/carro-assinatura.jpg" alt="Representação de carro assinado">
-
-        <p class="paragrafo paragrafo-sobre">
-            Com <span class="texto-amarelo">15 anos</span> de atenção e dedicação, estamos aqui para oferecer segurança e tranquilidade no momento da compra
-            do seu veículo. Isso porque trabalhamos sempre para atender as necessidades dos clientes e suas famílias, oferecendo <span
-                class="texto-amarelo">produtos</span> e <span class="texto-amarelo">serviços de qualidade</span>. Procuramos sempre as melhores condições
-            para nossos clientes, pensamos além do momento da compra, construindo uma relação de confiança e fidelidade.
-        </p>
-    </section/p>
+            <div class="hero-visual">
+                <div class="car-3d-container">
+                    <div class="car-3d">
+                        <img src="assets/banner.jpg" alt="Carro Premium" class="car-image">
+                    </div>
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
         </div>
-<!-- SEÇÃO CONSULTORES -->
-    <section id="consultores" class="secao" role="region" aria-label="Nossos consultores">
-        <h3>Consultores</h3>
 
-        <img class="imagem" src="assets/consultores.jpg" alt="Equipe de consultores Carros & Cia">
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
 
-        <p class="paragrafo">
-            A <span class="texto-amarelo">Carros & Cia.</span> conta com um time de profissionais qualificados com vários anos de experiência no
-            mercado. Entre em contato conosco, nossos consultores terão prazer em atendê-lo. <a class="link" href="mailto:consultores@email.com"><span
-                    class="texto-amarelo">Falar com os consultores</span></a>
-        </p>
-    </section/p>
-    <!-- SEÇÃO CONTATO E LOCALIZAÇÃO -->
-    <section id="endereco" class="secao contato" role="region" aria-label="Localização e contato">
-        <h3>Onde estamos</h3>
+    <!-- ABOUT SECTION -->
+    <section id="sobre" class="about" role="region" aria-label="Sobre nós">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quem Somos</h2>
+                <div class="title-underline"></div>
+            </div>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.254844548052!2d-43.364712467659004!3d-22.98234139602229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-904!5e0!3m2!1spt-BR!2sbr!4v1642532754862!5m2!1spt-BR!2sbr"
-            title="Localização da Carros & Cia em Rio de Janeiro"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        Com <span class="neon-highlight">15 anos</span> de dedicação e excelência, a <span class="neon-highlight">Carros & Cia.</span> 
+                        é referência em consultoria automotiva.
+                    </p>
 
-        <p class="paragrafo paragrafo-contato">Ficou interessado? Venha nos conhecer ou se tiver dúvidas entre em <a class="link"
-                href="mailto:consultores@email.com">
-                <span class="texto-amarelo">contato</span>
-            </a> conosco.
-        </p>
+                    <p class="about-paragraph">
+                        Somos especialistas em conectar você ao veículo perfeito. Oferecemos segurança, transparência e 
+                        produtos de qualidade incomparável. Nossas soluções vão além da compra - construímos relacionamentos 
+                        de confiança e fidelidade duradouros.
+                    </p>
+
+                    <div class="stats-container">
+                        <div class="stat-box">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Veículos Vendidos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/carro-assinatura.jpg" alt="Carros de Qualidade">
+                        <div class="frame-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="servicos" class="services" role="region" aria-label="Serviços">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-service="1">
+                    <div class="card-icon">
+                        <div class="icon-3d">🚗</div>
+                    </div>
+                    <h3 class="service-title">Consultoria de Compra</h3>
+                    <p class="service-description">
+                        Orientação completa desde a escolha do veículo até a finalização da compra com total segurança.
+                    </p>
+                    <a href="#contato" class="service-link">Mais informações →</a>
+                </div>
+
+                <div class="service-card" data-service="2">
+                    <div class="card-icon">
+                        <div class="icon-3d">💰</div>
+                    </div>
+                    <h3 class="service-title">Análise de Preço</h3>
+                    <p class="service-description">
+                        Avaliação detalhada do melhor preço no mercado para seu veículo ideal.
+                    </p>
+                    <a href="#contato" class="service-link">Mais informações →</a>
+                </div>
+
+                <div class="service-card" data-service="3">
+                    <div class="card-icon">
+                        <div class="icon-3d">📋</div>
+                    </div>
+                    <h3 class="service-title">Documentação Completa</h3>
+                    <p class="service-description">
+                        Toda a documentação necessária organizada e preparada para a transferência.
+                    </p>
+                    <a href="#contato" class="service-link">Mais informações →</a>
+                </div>
+
+                <div class="service-card" data-service="4">
+                    <div class="card-icon">
+                        <div class="icon-3d">🔧</div>
+                    </div>
+                    <h3 class="service-title">Manutenção e Suporte</h3>
+                    <p class="service-description">
+                        Acompanhamento pós-venda e indicações de parceiros confiáveis para manutenção.
+                    </p>
+                    <a href="#contato" class="service-link">Mais informações →</a>
+                </div>
+
+                <div class="service-card" data-service="5">
+                    <div class="card-icon">
+                        <div class="icon-3d">🏆</div>
+                    </div>
+                    <h3 class="service-title">Garantia Premium</h3>
+                    <p class="service-description">
+                        Garantia estendida para sua tranquilidade e proteção do investimento.
+                    </p>
+                    <a href="#contato" class="service-link">Mais informações →</a>
+                </div>
+
+                <div class="service-card" data-service="6">
+                    <div class="card-icon">
+                        <div class="icon-3d">⚡</div>
+                    </div>
+                    <h3 class="service-title">Financiamento Flexível</h3>
+                    <p class="service-description">
+                        Opções de pagamento adaptadas às suas necessidades financeiras.
+                    </p>
+                    <a href="#contato" class="service-link">Mais informações →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSULTORES SECTION -->
+    <section id="consultores" class="consultores" role="region" aria-label="Nossos Consultores">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Consultores</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="consultant-image">
+                <div class="image-frame-large">
+                    <img src="assets/consultores.jpg" alt="Equipe de Consultores Carros & Cia">
+                    <div class="frame-glow-large"></div>
+                </div>
+            </div>
+
+            <div class="consultant-content">
+                <p class="consultant-text">
+                    A <span class="neon-highlight">Carros & Cia.</span> é formada por profissionais altamente qualificados com 
+                    anos de experiência no mercado automotivo. Nosso time está dedicado a oferecer o melhor atendimento personalizado.
+                </p>
+
+                <p class="consultant-text">
+                    Entre em contato conosco e converse com um de nossos especialistas. Estamos prontos para transformar sua 
+                    experiência de compra em uma jornada memorável.
+                </p>
+
+                <button class="btn btn-primary" data-scroll="#contato">Falar com Consultores</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contato" class="contact" role="region" aria-label="Contato e Localização">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Onde Estamos</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.254844548052!2d-43.364712467659004!3d-22.98234139602229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-904!5e0!3m2!1spt-BR!2sbr!4v1642532754862!5m2!1spt-BR!2sbr"
+                        title="Localização da Carros & Cia"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-group">
+                        <h3 class="info-title">Informações de Contato</h3>
+                        
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <a href="mailto:consultores@email.com" class="info-link">consultores@email.com</a>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Telefone:</span>
+                            <a href="tel:+5521999999999" class="info-link">+55 (21) 99999-9999</a>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Endereço:</span>
+                            <p class="info-text">Av. Ayrton Senna, 3000<br>Barra da Tijuca<br>Rio de Janeiro - RJ</p>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Horário:</span>
+                            <p class="info-text">Segunda a Sexta: 9h - 18h<br>Sábado: 10h - 14h</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" aria-label="Formulário de contato">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Seu Nome" required aria-label="Nome">
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu Email" required aria-label="Email">
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Sua Mensagem" rows="4" required aria-label="Mensagem"></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="rodape">
-        <p>&copy; 2026 <span class="texto-amarelo">Carros & Cia.</span> Todos os direitos reservados.</p>
-        <p>Desenvolvido por <span class="texto-amarelo">Rodrigo Abreu</span></p>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Carros & Cia.</h4>
+                    <p>Consultoria automotiva de excelência com 15 anos de dedicação ao mercado.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: <a href="mailto:consultores@email.com">consultores@email.com</a></p>
+                    <p>Tel: <a href="tel:+5521999999999">+55 (21) 99999-9999</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">in</a>
+                        <a href="#" aria-label="LinkedIn">li</a>
+                        <a href="#" aria-label="Twitter">tw</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="neon-text">Carros & Cia.</span> - Todos os direitos reservados.</p>
+                <p>Desenvolvido por <span class="neon-text">Rodrigo Abreu</span></p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/interactions.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
 </body>
 
-        </div>
-    </body>
 </html>
